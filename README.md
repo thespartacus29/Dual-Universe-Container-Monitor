@@ -59,18 +59,25 @@ To add each script to a Programming board:
 5. Link Relay to screen and each Secondary Board. This will ensure when you turn on/off the primary board all other elements get turn on/off as well.
 6. Edit the LUA Parameters ( Right-click on the Programming Board > Advanced > Edit LUA parameters)
  - title: Enter a title for the top of the screen. DO NOT remove the double quotes
- - container1Label: Enter the name of the item inside container1. DO NOT remove the double quotes
- - container1Density: Enter a number that represents the Unit Mass for the item inside container1. 
- <details> 
+ - showSafetyStock: This is checked by default. It will display the Qty/SafetyStock. Uncheck it if you want to only disply Qty on the screen. 
+ - container1Enabled: This is checked by default. Uncheck it for any slots that are not used.
+ NOTE: Disconnecting a container slot and leaving its Enabled flag checked will result on Script error.
+ - container1Label: Enter the name of the item inside container1. DO NOT remove the double quotes. 
+ NOTE: With elements that have long names you will have to get creative with how many characters you enter. If the Name goes into a second line it will push the last item of the table out of view so try keeping the names to a single line.
+ - container1Density: Enter only a number that represents the Unit Mass for the item inside container1. See screenshot below.
+ <details> <summary> Inspect Item to see the Unit Mass </summary>
  
- ![unitmass](Resources/unitmass.png)</details>
+ ![unitmass](Resources/unitmass.png)
  
- 
- - container1SafetyStock: Enter 
+ </details> 
+ - container1SafetyStock: Enter a number representing a quantity you would consider optimal or "100%". i.e if you want to have 1000 units at all times in a container then enter 1000, the status of the item will change to LOW if the quantity drops to 50% and CRITICAL when it reaches 25% or 500 and 250 respectively in this example.
+
+NOTE: Each container have their own Enabled,Label,Density and SafetyStock parameters so you will need to enter label, density and Safety stock values for EACH container.
 
 ### Secondary Boards
 1. Add script to the board
 2. Open the Lua Editor (hover over the programming board and press Ctrl+L or right-click on the programming board > Advanced > Edit LUA script ) and look at the order of the slots. 
 3. Link the elements (Databanks, containers) in the correct order 
+4. Edit LUA parameters
 
 Finally turn off/on the Primary board to ensure everything is running fresh. Enjoy :)
