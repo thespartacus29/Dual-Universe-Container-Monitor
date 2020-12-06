@@ -63,7 +63,8 @@ To add each script to a Programming board:
  - container1Density: Enter a number that represents the Unit Mass for the item inside container1. 
  <details> 
  
- ![unitmass](Resources/Unit Mass.png)</details>
+ ![unitmass](Resources/unitmass.png)</details>
+ 
  
  - container1SafetyStock: Enter 
 
