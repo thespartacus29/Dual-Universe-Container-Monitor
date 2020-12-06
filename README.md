@@ -60,7 +60,11 @@ To add each script to a Programming board:
 6. Edit the LUA Parameters ( Right-click on the Programming Board > Advanced > Edit LUA parameters)
  - title: Enter a title for the top of the screen. DO NOT remove the double quotes
  - container1Label: Enter the name of the item inside container1. DO NOT remove the double quotes
- - container1Density: Enter a number that represents the Unit Mass for the item inside container1.
+ - container1Density: Enter a number that represents the Unit Mass for the item inside container1. 
+ <details> 
+ 
+ ![unitmass](Resources/Unit Mass.png)</details>
+ 
  - container1SafetyStock: Enter 
 
 ### Secondary Boards
