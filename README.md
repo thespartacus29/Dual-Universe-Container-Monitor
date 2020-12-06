@@ -1,6 +1,7 @@
 # Container Monitor
 
 This script allows you to monitor the contents of up to 28 containers and display Name, Qty and Status on a screen.
+![monitorsafetystockon](Resources/SafetyStockOn.png) 
 
 ## :page_with_curl: Elements Required
 
