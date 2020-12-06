@@ -57,6 +57,11 @@ To add each script to a Programming board:
 3. Link the elements (Databanks, screen, switch, containers) in the correct order 
 4. Link switch to Relay
 5. Link Relay to screen and each Secondary Board. This will ensure when you turn on/off the primary board all other elements get turn on/off as well.
+6. Edit the LUA Parameters ( Right-click on the Programming Board > Advanced > Edit LUA parameters)
+ - title: Enter a title for the top of the screen. DO NOT remove the double quotes
+ - container1Label: Enter the name of the item inside container1. DO NOT remove the double quotes
+ - container1Density: Enter a number that represents the Unit Mass for the item inside container1.
+ - container1SafetyStock: Enter 
 
 ### Secondary Boards
 1. Add script to the board
