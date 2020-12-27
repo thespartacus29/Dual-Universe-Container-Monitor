@@ -1,0 +1,69 @@
+html = [[
+<div style="width=100vw">
+<h1 style="font-size: 4vw; text-align: center;">]]..title..[[</h1>
+<div style="margin-top: 0px;padding: 0px;width: 100vw;display: inline-block;"> 
+<style>
+.row {
+  margin-left:5px;
+  margin-right:5px;
+}  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  background-color: black;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 2px solid blue;
+}
+tr{
+  border: 2px solid blue;	
+}
+th {  
+  opacity: 0.8;
+  color: orange;
+  text-align: center;
+  padding: 8px;
+  font-size: 4vw;
+}
+td {
+  text-align: center;
+  padding: 5px;
+  font-size: 3.5vw;
+}
+tr:nth-child(even) {
+  background-color: #0080FF30;  
+}
+.CRITICAL{
+  color: ]]..criticalColor..[[;
+}
+.LOW{
+  color: ]]..lowColor..[[;
+}
+.GOOD{
+  color: ]]..goodColor..[[;
+}         
+</style> 
+
+<div class="row">
+  <div>
+      <table>
+        <tr>  
+          <th>Name</th>
+          <th>Qty</th>
+          <th>Status</th>
+        </tr>
+        ]]..container1HTML..[[
+        ]]..container2HTML..[[
+        ]]..container3HTML..[[
+        ]]..container4HTML..[[
+        ]]..container5HTML..[[        
+  	   ]]..sb1html..[[
+	   
+      </table>      
+  </div>
+
+]]
